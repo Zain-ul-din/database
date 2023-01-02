@@ -1,0 +1,13 @@
+{
+  "name": "emulator-suite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "firebase emulators:start"
+  },
+  "dependencies": {
+    "firebase": "^9.15.0"
+  }
+}
