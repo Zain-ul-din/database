@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000",
+    "firebase": "cd emulator suite && yarn dev",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
