@@ -1,6 +1,11 @@
+import FirestoreDemo from "../components/FirestoreDemo"
+
 function App() {
   return (
-    <>App</>
+    <>
+      <h2>firebase Demo</h2>
+      <FirestoreDemo />
+    </>
   )
 }
 
