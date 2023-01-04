@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { store } from '../lib/firebase'
-import { collection, onSnapshot, doc } from "firebase/firestore";
+import { collection, onSnapshot, doc, setDoc, updateDoc, deleteDoc } from "firebase/firestore";
 
 import type { CollectionReference, DocumentData, DocumentReference, DocumentSnapshot } from 'firebase/firestore';
 
+// delete doc
+// setDoc (doc, {data})
+// updateDoc (doc, {data})
 
 const colRef: CollectionReference = collection (store, 'me'); // store + collection name
 const docRef: DocumentReference = doc (colRef, '1IScaSml2sgRaItdV3yH');
-    
+
 // firebase store demo
 export default function FirestoreDemo (): JSX.Element {
     
@@ -28,7 +31,7 @@ export default function FirestoreDemo (): JSX.Element {
         })
 
     }, [])
-
+    
     return (
         <>
             {data && Object.values(data).map ((data,idx)=> {
